@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="../scripts/script.js" defer></script>
+    <title>Gerador de senhas</title>
+  </head>
+  <body>
+    <div id="title">
+      <h1>Por favor</h1>
+      <h3>Faça seu cadastro abaixo</h3>
+    </div>
+    <form class="forms cadastro">
+      <label for="userEmail" class="labelsInputs">
+        <span>Email: </span>
+        <input type="email" id="userEmail" required />
+      </label>
+      <label for="userPassword" class="labelsInputs">
+        <span>Senha: </span>
+        <input type="password" id="userPassword" required />
+      </label>
+      <div id="sugeSenha">
+        <p>Senha sugerida</p>
+        <span id="textoSenha">asdasd</span>
+        <div>
+            <i class="fas fa-sync-alt" title="Nova sugestão"></i>
+            <i class="fas fa-copy" title="Copiar"></i>
+            <i class="fas fa-gear" title="Configurações"></i>
+        </div>
+      </div>
+      <hr />
+      <label for="userNome">
+        <span>Nome: </span>
+        <input type="text" id="userNome" required/>
+      </label>
+      <label for="userIdade">
+        <span>Nascimento: </span>
+        <input type="date" id="userIdade" required>
+      </label>
+      <label for="acceptTermosCondicoes">
+          <div id="termosCondicoes"> <input type="checkbox" id="acceptTermosCondicoes"> Concordar com <a href="#">termos e condições</a>?</div>
+      </label>
+      <button type="submit" id="firstActBtn">Cadastrar</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Gerador de senhas</title>
+  </head>
+  <body>
+    <div id="title">
+        <h1>Seja bem-vindo!</h1>
+        <h3>Faça seu login abaixo</h3>
+    </div>
+    <form class="forms">
+      <label for="userEmail" class="labelsInputs">
+        <span>Email: </span>
+        <input type="email" id="userEmail" required/>
+      </label>
+      <label for="userPassword" class="labelsInputs">
+        <span>Senha: </span>
+        <input type="password" id="userPassword" required/>
+      </label>
+      <a href="#">Esqueceu sua senha?</a>
+      <button type="submit" id="firstActBtn">Login</button>
+    </form>
+    <div id="newUserArea">
+        <span>Não possui uma conta?</span>
+        <a href="routes/cadastrar.html"><button id="secondActBtn">Cadastrar</button></a>
+    </div>
+  </body>
+</html>

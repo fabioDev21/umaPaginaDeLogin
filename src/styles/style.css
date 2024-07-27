@@ -1,0 +1,101 @@
+:root{
+    --p-color: #0f1316;
+    --s-color: #83929d;
+    /* TODO: adicionar dark mode como extra ao projeto */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* TODO: adicionar um background no projeto */
+body{
+    display: grid;
+    place-items: center;
+    width: 90%;
+    gap: 1.5rem;
+    margin: 10% auto;
+    padding: 1rem;
+
+    background-repeat: no-repeat;
+}
+#title{
+    text-align: center;
+    font-size: 18px;
+    h3{
+        margin-top: .5rem;
+        font-weight: 600;
+    }
+}
+/* TODO: Aumentar fontes para acessibilidade */
+.forms{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 20px;
+    label{
+        span{
+            display: block;
+        }
+        input{
+            font-size: .9rem;
+            padding: .15rem;
+        }
+
+    }
+    a{
+        text-align: center;
+        font-size: .95rem;
+    }
+    #firstActBtn{
+        padding: .6rem;
+        background-color: aliceblue;
+    }
+}
+
+/* Área da página de cadastro */
+.cadastro{
+    label{
+        margin: auto;
+    }
+}
+#termosCondicoes{
+    font-size: 18px;
+    a{
+        font-size: 18px;
+    }
+}
+#sugeSenha{
+    padding: .5rem;
+    width: 60%;
+    margin: auto;
+    gap: 1rem;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    border: #0f1316 solid 3px;
+
+    #textoSenha{
+        font-weight: normal;
+        font-size: 30px;
+    }
+    div{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        
+        i{
+            cursor: pointer;
+            font-size: 20px;
+            transition: .4s;
+        }
+        i:hover{
+            filter:invert(.2);
+            scale: 1.1;
+        }
+
+    } 
+}
+input[type="date"]{
+    width: 12rem;
+}
