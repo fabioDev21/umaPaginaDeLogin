@@ -11,7 +11,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../styles/style.css" />
-    <script src="../scripts/script.js" defer></script>
+    <script src="../scripts/cadastroScript.js" defer></script>
     <title>Gerador de senhas</title>
   </head>
   <body>
@@ -30,24 +30,41 @@
       </label>
       <div id="sugeSenha">
         <p>Senha sugerida</p>
-        <span id="textoSenha">asdasd</span>
-        <div>
-            <i class="fas fa-sync-alt" title="Nova sugestão"></i>
-            <i class="fas fa-copy" title="Copiar"></i>
-            <i class="fas fa-gear" title="Configurações"></i>
+        <span id="textoSenha">abcdefghijk</span>
+        <div class="itens__senha">
+          <i class="fas fa-sync-alt" id="refreshBtn" title="Nova sugestão"></i>
+          <i class="fas fa-copy" id="copyBtn" title="Copiar"></i>
+          <i class="fas fa-gear" id="configsSenhaBtn" title="Configurações"></i>
+        </div>
+        <div class="configs__senha hidden">
+          <label for="userQuerLetras">
+            <input type="checkbox" id="userQuerLetras" /> Você quer
+              letras?
+          </label>
+          <label for="userQuerNumeros">
+            <input type="checkbox" id="userQuerNumeros" /> Você quer
+              números?
+          </label>
+          <label for="userQuerSimbolos">
+            <input type="checkbox" id="userQuerSimbolos" /> Você quer
+              símbolos?
+          </label>
         </div>
       </div>
       <hr />
       <label for="userNome">
         <span>Nome: </span>
-        <input type="text" id="userNome" required/>
+        <input type="text" id="userNome" required />
       </label>
       <label for="userIdade">
         <span>Nascimento: </span>
-        <input type="date" id="userIdade" required>
+        <input type="date" id="userIdade" required />
       </label>
       <label for="acceptTermosCondicoes">
-          <div id="termosCondicoes"> <input type="checkbox" id="acceptTermosCondicoes"> Concordar com <a href="#">termos e condições</a>?</div>
+        <div id="termosCondicoes">
+          <input type="checkbox" id="acceptTermosCondicoes" /> Concordar com
+          <a href="#">termos e condições</a>?
+        </div>
       </label>
       <button type="submit" id="firstActBtn">Cadastrar</button>
     </form>
