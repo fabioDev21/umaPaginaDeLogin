@@ -1,32 +1,3 @@
-:root{
-    --p-color: #0f1316;
-    --s-color: #83929d;
-    /* TODO: adicionar dark mode como extra ao projeto */
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/* TODO: adicionar um background no projeto */
-body{
-    position: relative;
-    display: grid;
-    place-items: center;
-    width: 90%;
-    gap: 1.5rem;
-    margin: 5% auto;
-    padding: 1rem;
-    background-repeat: no-repeat;
-}
-#title{
-    text-align: center;
-    font-size: 18px;
-    h3{
-        margin-top: .5rem;
-        font-weight: 600;
-    }
-}
 .forms{
     display: flex;
     flex-direction: column;
