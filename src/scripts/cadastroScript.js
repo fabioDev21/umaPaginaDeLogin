@@ -39,7 +39,7 @@ function controiSugestaoSenha(
     senhaTela.textContent = senhaTotal.join("")
 }
 
-
+// Definição da função dos botões
 const refreshBtn = document.querySelector("#refreshBtn")
 refreshBtn.addEventListener("click", () => {
     controiSugestaoSenha()
@@ -58,3 +58,24 @@ configsSenhaBtn.addEventListener("click", () => {
 })
 
 window.addEventListener("load", controiSugestaoSenha())
+
+// Função que faz o cadastro do cliente no localStorage
+const cadastro = document.querySelectorAll(".cadastro")[0]
+cadastro.addEventListener("submit", (e) => {
+    e.preventDefault()
+
+    let userEmail = document.querySelector("#userEmail").value
+    let userPassword = document.querySelector("#userPassword").value
+    let userNome = document.querySelector("#userNome").value
+    let userIdade = document.querySelector("#userIdade").value
+
+    const novoUsuario = {
+        userEmail: userEmail,
+        userPassword: userPassword,
+        userNome: userNome,
+        userIdade: userIdade
+    }
+
+    localStorage.setItem("usuario", JSON.stringify(novoUsuario))
+    window.location.reload()
+})

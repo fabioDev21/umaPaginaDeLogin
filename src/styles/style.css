@@ -15,9 +15,8 @@ body{
     place-items: center;
     width: 90%;
     gap: 1.5rem;
-    margin: 10% auto;
+    margin: 5% auto;
     padding: 1rem;
-
     background-repeat: no-repeat;
 }
 #title{
@@ -28,7 +27,6 @@ body{
         font-weight: 600;
     }
 }
-/* TODO: Aumentar fontes para acessibilidade */
 .forms{
     display: flex;
     flex-direction: column;
@@ -42,7 +40,6 @@ body{
             font-size: .9rem;
             padding: .15rem;
         }
-
     }
     a{
         text-align: center;
@@ -68,7 +65,7 @@ body{
 }
 #sugeSenha{
     padding: .5rem;
-    width: 80%;
+    width: 85%;
     margin: auto;
     gap: 1rem;
     display: grid;
@@ -85,7 +82,6 @@ body{
         display: flex;
         align-items: center;
         gap: 1rem;
-
         i{
             cursor: pointer;
             font-size: 20px;
@@ -94,7 +90,6 @@ body{
             filter:invert(.2);
             scale: 1.1;
         }
-
     } 
 }
 input[type="date"]{
@@ -106,12 +101,19 @@ input[type="date"]{
     display: flex;
     flex-direction: column;
     font-weight: normal;
-    
+    gap: .3rem;
+
     label{
         padding: .1rem .5rem;
         margin-left: 0;
+    }
+    input[type="number"]{
+        margin: .3rem;
     }    
 }
 .hidden{
     display: none;
+}
+#userTamanhoSenha{
+    width: 6rem;
 }

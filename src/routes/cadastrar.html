@@ -16,8 +16,8 @@
   </head>
   <body>
     <div id="title">
-      <h1>Por favor</h1>
-      <h3>Faça seu cadastro abaixo</h3>
+      <h1>Faça seu cadastro</h1>
+      <h3>Preencha os dados abaixo</h3>
     </div>
     <form class="forms cadastro">
       <label for="userEmail" class="labelsInputs">
@@ -38,16 +38,16 @@
         </div>
         <div class="configs__senha hidden">
           <label for="userQuerLetras">
-            <input type="checkbox" id="userQuerLetras" /> Você quer
-              letras?
+            <span><input type="checkbox" id="userQuerLetras" /> Você quer letras?</span>
           </label>
           <label for="userQuerNumeros">
-            <input type="checkbox" id="userQuerNumeros" /> Você quer
-              números?
+            <span><input type="checkbox" id="userQuerNumeros" /> Você quer números?</span>
           </label>
           <label for="userQuerSimbolos">
-            <input type="checkbox" id="userQuerSimbolos" /> Você quer
-              símbolos?
+            <span><input type="checkbox" id="userQuerSimbolos" />Você quer símbolos?</span>
+          </label>
+          <label for="userTamanhoSenha">
+            <span>Tamanho:<input id="userTamanhoSenha" type="number" placeholder="12..."></span>
           </label>
         </div>
       </div>
@@ -62,11 +62,14 @@
       </label>
       <label for="acceptTermosCondicoes">
         <div id="termosCondicoes">
-          <input type="checkbox" id="acceptTermosCondicoes" /> Concordar com
-          <a href="#">termos e condições</a>?
+          <input type="checkbox" id="acceptTermosCondicoes" required/> Concordar com <a href="#">termos e condições</a>?
         </div>
       </label>
       <button type="submit" id="firstActBtn">Cadastrar</button>
     </form>
+    <div id="newUserArea">
+      <span>Já possui uma conta?</span>
+      <a href="../index.html"><button id="secondActBtn">Login</button></a>
+  </div>
   </body>
 </html>
