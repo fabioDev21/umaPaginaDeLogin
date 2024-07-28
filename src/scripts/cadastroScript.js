@@ -54,7 +54,9 @@ copyBtn.addEventListener("click", async () => {
 const configsSenhaBtn = document.querySelector("#configsSenhaBtn")
 configsSenhaBtn.addEventListener("click", () => {
     const mostraSenha = document.querySelectorAll(".configs__senha")[0]
+    const corpoForms = document.querySelectorAll(".container")[0]
     mostraSenha.classList.toggle("hidden")
+    corpoForms.classList.toggle("ajustaMargin")
 })
 
 window.addEventListener("load", controiSugestaoSenha())
