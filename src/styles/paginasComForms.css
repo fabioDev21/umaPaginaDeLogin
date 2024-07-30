@@ -12,15 +12,17 @@
         }
     }
     a{
+        color: var(--p-color);
+        font-weight: 600;
         text-align: center;
-        font-size: .95rem;
+        font-size: 1rem;
     }
     #firstActBtn{
         padding: .6rem;
         font-size: 1.3rem;
         font-weight: 600;
         background-color: crimson;
-        border: 2px solid #fd8f8f;
+        border: 2px solid var(--t-l-color);
         color: #fff;
         transition: ease-in-out .25s;
         &:hover{
@@ -30,13 +32,26 @@
         &:active{
             scale: 1;
         }
-        
+    }
+}
+.secondActBtn{
+    padding: .2em;
+    background-color: #0f131689;
+    border: 2px solid #0f131654;
+    cursor: pointer;
+    color: #fff;
+    margin: .2rem;
+    transition: ease-in-out .2s;
+    &:hover{
+        scale: 1.01;
+        filter: saturate(0.8);
     }
 }
 /* Custom de labels, inputs e botões */
 .labelsInputs{
-    color: crimson;
+    color: var(--p-color);
     span{
+        font-weight: 600;
         font-size: 1.3rem;
         margin-left: -5px;
     }
@@ -55,13 +70,10 @@ button{
 #termosCondicoes{
     color: #fff;
     font-size: 18px;
-    a{
-        color: #fd8f8f;
-        font-size: 18px;
-    }
 }
 #newUserArea > span{
     color: #fff;
+    font-size: 1.2rem;
 }
 #sugeSenha{
     padding: .5rem;
@@ -104,8 +116,8 @@ input[type="date"]{
 
 /* Expansão para configurações de senhas */
 .configs__senha{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    
     font-weight: normal;
     gap: .3rem;
 
@@ -121,7 +133,4 @@ input[type="date"]{
 }
 .hidden{
     display: none;
-}
-.ajustaMargin{
-    margin-block-start: 10rem;
 }

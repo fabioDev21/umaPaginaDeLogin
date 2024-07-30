@@ -1,12 +1,14 @@
 :root{
     --p-color: #0f1316;
     --s-color: #83929d;
+    --t-l-color: rgb(228, 73, 104);
     /* TODO: adicionar dark mode como extra ao projeto */
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
 }
 body{
@@ -14,11 +16,11 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 110vh;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    background-image: url("../assets/view-tropical-rainforest-costa-rica.jpg");
+    background-size: cover 110%;
+    background-image: url("../images/landscape-city.png");
 }
 
 .container{
@@ -27,20 +29,31 @@ body{
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    width: 90%;
+    width: 80%;
     border: #00000029 1px solid;
     gap: 1.3rem;
     backdrop-filter: blur(5px);
+    background-color: #ebcfaa45;
     border-radius: 15px;
 }
 
+@media screen and (min-width:400px) {
+   .container{
+        width: 30rem;
+   }
+}
+
 #title{
+    color: #fff;
     text-align: center;
+    
     h1{
         font-size: 2.5rem;
     }
     h3{
-        color: crimson;
-        font-weight: 600;
+        color: var(--p-color);
+        font-size: 1.35rem;
+        font-weight: 800;
+        margin-top: .5rem;
     }
 }

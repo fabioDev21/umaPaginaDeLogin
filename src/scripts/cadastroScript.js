@@ -12,7 +12,6 @@ function controiSugestaoSenha(
     const senhaTotal = []
     const tamanhoSenha = tamanho
     
-
     for(let i = 0; i <= tamanhoSenha; i++){
         
         if(senhaTotal.length >= tamanhoSenha){
@@ -54,9 +53,52 @@ copyBtn.addEventListener("click", async () => {
 const configsSenhaBtn = document.querySelector("#configsSenhaBtn")
 configsSenhaBtn.addEventListener("click", () => {
     const mostraSenha = document.querySelectorAll(".configs__senha")[0]
-    const corpoForms = document.querySelectorAll(".container")[0]
     mostraSenha.classList.toggle("hidden")
-    corpoForms.classList.toggle("ajustaMargin")
+})
+
+// Área de mudança de senha gerada
+const userQuerLetras = document.querySelector("#userQuerLetras")
+userQuerLetras.addEventListener("change", (e) => {
+    console.log(e.target.checked)
+    if(e.target.checked === true){
+        let tamanho = 12
+        let querLetras = false
+        let querNumeros = true 
+        let querCaracteres = true
+        controiSugestaoSenha(tamanho, querLetras,querNumeros, querCaracteres)
+    } else{
+        controiSugestaoSenha()
+    }
+
+})
+
+const userQuerNumeros = document.querySelector("#userQuerNumeros")
+userQuerNumeros.addEventListener("change", (e) => {
+    console.log(e.target.checked)
+    if(e.target.checked === true){
+        let tamanho = 12
+        let querLetras = true
+        let querNumeros = false 
+        let querCaracteres = true
+        controiSugestaoSenha(tamanho, querLetras,querNumeros, querCaracteres)
+    } else{
+        controiSugestaoSenha()
+    }
+
+})
+
+const userQuerSimbolos = document.querySelector("#userQuerSimbolos")
+userQuerSimbolos.addEventListener("change", (e) => {
+    console.log(e.target.checked)
+    if(e.target.checked === true){
+        let tamanho = 12
+        let querLetras = true
+        let querNumeros = true 
+        let querCaracteres = false
+        controiSugestaoSenha(tamanho, querLetras,querNumeros, querCaracteres)
+    } else{
+        controiSugestaoSenha()
+    }
 })
 
 window.addEventListener("load", controiSugestaoSenha())
