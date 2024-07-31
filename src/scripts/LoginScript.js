@@ -29,7 +29,7 @@ forms.addEventListener("submit", (e) => {
 
     if(status == 2){
         // redireciona o usuário para a página de sucesso
-        window.location.replace("http://localhost:5500/umaPaginaDeLogin/src/routes/loginSucesso.html")
+        window.location.replace("http://uma-pagina-de-login.vercel.app/routes/loginSucesso.html")
 
     } else{
         userEmail.style.border = "2px solid crimson"
