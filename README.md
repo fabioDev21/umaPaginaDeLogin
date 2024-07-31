@@ -12,7 +12,3 @@ Uma página de login simples que utiliza de funcionalidades como preenchimento d
 <h2> Funcionalidade de gerar senha </h2>
 
 ![image](https://github.com/user-attachments/assets/29a78691-1f9b-4d16-89dd-148d99b7c1c4)
-
-<h2> Aba Sucesso </h2>
-
---x A caminho x--
