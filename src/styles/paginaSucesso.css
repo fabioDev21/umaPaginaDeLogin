@@ -1,0 +1,42 @@
+nav{
+    margin: 3rem;
+    a{
+        button{
+            padding: .6rem 1rem ;
+            border: solid 2px #000;
+            border-radius: 15px;
+            font-size: 1.3rem;
+            background-color: #0000004d;
+            color: #fff;
+            font-weight: 600;
+            transition: all .2s;
+        }
+        &:hover button{
+            background-color: #2726264d;
+        }   
+    }
+}
+.container{
+    text-align: center;
+    color: #fff;
+    background-color: #0000004d;
+    width: min(430px, 90%);
+}
+figure{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    background-color: #fff;
+    padding: 1rem;
+    width: 250px;
+}
+img{
+    width: 16rem;
+    filter: contrast(1.1);
+}
+figcaption{
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #000;
+}

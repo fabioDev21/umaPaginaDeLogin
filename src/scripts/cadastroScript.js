@@ -101,6 +101,26 @@ userQuerSimbolos.addEventListener("change", (e) => {
     }
 })
 
+// Campo para alterar tamanho da senha
+const userTamanhoSenha = document.querySelector("#userTamanhoSenha")
+userTamanhoSenha.addEventListener("change", (e) => {
+    
+    if(e.target.value >= 13){
+        window.alert("Insira um número de até 13 dígitos!")
+        controiSugestaoSenha()
+    } else{
+        if(e.target.value >= 1){
+            let tamanho = e.target.value
+            let querLetras = true
+            let querNumeros = true 
+            let querCaracteres = true
+            controiSugestaoSenha(tamanho, querLetras,querNumeros, querCaracteres)
+        } else{
+            controiSugestaoSenha()
+        }
+    }
+})
+
 window.addEventListener("load", controiSugestaoSenha())
 
 // Função que faz o cadastro do cliente no localStorage
@@ -121,5 +141,6 @@ cadastro.addEventListener("submit", (e) => {
     }
 
     localStorage.setItem("usuario", JSON.stringify(novoUsuario))
+    window.alert(`Parabéns, ${userNome}! Você foi cadastrado.`)
     window.location.reload()
 })

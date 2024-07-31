@@ -28,10 +28,10 @@ forms.addEventListener("submit", (e) => {
     console.log(status)
 
     if(status == 2){
-        window.alert("Conectado com sucesso!!!")
+        // redireciona o usuário para a página de sucesso
+        window.location.replace("http://localhost:5500/umaPaginaDeLogin/src/routes/loginSucesso.html")
+
     } else{
         userEmail.style.border = "2px solid crimson"
     }
 })
-
-// window.addEventListener("load", ())

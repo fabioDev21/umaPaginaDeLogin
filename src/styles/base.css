@@ -1,46 +1,31 @@
-:root{
-    --p-color: #0f1316;
-    --s-color: #83929d;
-    --t-l-color: rgb(228, 73, 104);
-    /* TODO: adicionar dark mode como extra ao projeto */
-}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, sans-serif;
     font-size: 14px;
 }
 body{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 110vh;
+    place-items: center;
+    margin: 3rem auto;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover 110%;
+    background-size: 100vh cover;
     background-image: url("../images/landscape-city.png");
 }
-
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
-    width: 80%;
+    padding: 1rem;
+    width: min(430px, 90%);
     border: #00000029 1px solid;
     gap: 1.3rem;
     backdrop-filter: blur(5px);
-    background-color: #ebcfaa45;
+    background-color: #0000004d;
     border-radius: 15px;
-}
-
-@media screen and (min-width:400px) {
-   .container{
-        width: 30rem;
-   }
 }
 
 #title{
@@ -51,7 +36,7 @@ body{
         font-size: 2.5rem;
     }
     h3{
-        color: var(--p-color);
+        color: #d1d1d1;
         font-size: 1.35rem;
         font-weight: 800;
         margin-top: .5rem;

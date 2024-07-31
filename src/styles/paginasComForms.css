@@ -12,17 +12,17 @@
         }
     }
     a{
-        color: var(--p-color);
+        color: rgb(122, 238, 142);
         font-weight: 600;
         text-align: center;
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     #firstActBtn{
         padding: .6rem;
         font-size: 1.3rem;
         font-weight: 600;
         background-color: crimson;
-        border: 2px solid var(--t-l-color);
+        border: 2px solid rgb(228, 73, 104);
         color: #fff;
         transition: ease-in-out .25s;
         &:hover{
@@ -49,7 +49,7 @@
 }
 /* Custom de labels, inputs e botões */
 .labelsInputs{
-    color: var(--p-color);
+    color: #d1d1d1;
     span{
         font-weight: 600;
         font-size: 1.3rem;
@@ -77,7 +77,7 @@ button{
 }
 #sugeSenha{
     padding: .5rem;
-    width: 85%;
+    width: 100%;
     margin: auto;
     gap: .4rem;
     display: grid;
@@ -116,15 +116,19 @@ input[type="date"]{
 
 /* Expansão para configurações de senhas */
 .configs__senha{
-    display: grid;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-weight: normal;
     gap: .3rem;
+    padding: .5rem;
 
     label{
         padding: .1rem .5rem;
+        margin-left: 0px;
     }
-    input[type="number"]{
+    input{
         margin: .3rem;
     }    
 }
